@@ -2,12 +2,10 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { AppComponent } from './app.component';
-import { FrontPageComponent } from './front-page/front-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from 'src/environments/environment';
 import { AppRoutingModule } from './app-routing.module';
-import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { ForgetPasswordComponent } from './components/forget-password/forget-password.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
@@ -25,7 +23,6 @@ const routes: Routes = []
 @NgModule({
   declarations: [
     AppComponent,
-    FrontPageComponent,
     ForgetPasswordComponent,
     SignInComponent,
     SignUpComponent
@@ -35,7 +32,6 @@ const routes: Routes = []
     BrowserAnimationsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AppRoutingModule,
-    RouterModule.forRoot(routes),
     FormsModule,
     MatSlideToggleModule,
     MatFormFieldModule,
@@ -47,7 +43,6 @@ const routes: Routes = []
     MatButtonModule,
     MatDatepickerModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
