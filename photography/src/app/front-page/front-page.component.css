@@ -1,0 +1,9 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+.image{
+    width: 20%;
+    height: 40%;
+    bottom: 0;
+}
