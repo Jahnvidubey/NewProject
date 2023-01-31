@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'photography';
+  ImageBack: string;
+  constructor(){
+    this.ImageBack='/assets/images/background.jpg'
+  }
 }

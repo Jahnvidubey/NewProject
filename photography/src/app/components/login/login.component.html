@@ -1,31 +1,36 @@
-<div class="container">
-<mat-card class="example-card">
-    <mat-card-content>
-      <img [src] ="ImagePath" 
-          class="image">
-      <h2>Login here!</h2>
+
+<mat-card class="card flex-row"> -->
+   <img [src]="Image" class="card-img-left example-card-img-responsive">
+    <div class="card-body">
+      <img [src]="ImagePath" class="logo">
+      <h2 class="card-title">Scotland Yard Productions</h2>
+      
+      <form class="card-title">
+        <h3>login here</h3>
         <div class="example-container">
-            <form class="search-form">
-            <mat-form-field class="example-full-width">
-                <mat-label>Enter your email</mat-label>
-              <input class="toolbar-search" matInput placeholder="pat@example.com" [formControl]="email" required>
-              <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error> 
-            </mat-form-field>   <br>
-            
-            <mat-form-field class="example-full-width">
-                <mat-label>Enter your password</mat-label>
-              <input class="toolbar-search" matInput placeholder="******" [type]="hide ? 'password' : 'text'" required>
-              <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
-                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-              </button>
-            </mat-form-field><br>
-            <a href="#">Forgot password?</a>
-            <div class="button-row">
-              <div class="example-button-row"><button mat-raised-button color="primary">Submit</button></div>
-              <div class="example-button-row1"><button mat-stroked-button>Register</button></div>  
-            </div>
-          </form>
-          </div>
-    </mat-card-content>
-  </mat-card>
-</div>
+          <mat-form-field appearance="outline" class="example-full-width" color="primary">
+            <mat-label class="input-card">Enter your email</mat-label>
+            <input class="toolbar-search" type="text" matInput placeholder="pat@example.com" [formControl]="email" required>
+            <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+          </mat-form-field>
+        </div>       
+        <div class="example-container">
+          <mat-form-field appearance="outline" class="example-full-width" color="primary">
+            <mat-label>Enter your password</mat-label>
+            <input class="toolbar-search" type="text" matInput [type]="hide ? 'password' : 'text'">
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+          </mat-form-field> </div>
+          <a href="#">Forgot Password?</a>
+           <br>
+          <button class="button">Submit</button>
+      </form>
+    </div>
+    
+  
+</mat-card>
+<!-- <mat-drawer-container class="example-container"> -->
+  <!-- <mat-drawer mode="side" opened>Drawer content</mat-drawer> -->
+  <!-- <mat-drawer-content>Main content</mat-drawer-content> -->
+<!-- </mat-drawer-container> -->

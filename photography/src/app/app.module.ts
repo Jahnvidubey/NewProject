@@ -15,6 +15,10 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FrontPageComponent } from './front-page/front-page.component';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatSidenavModule} from '@angular/material/sidenav';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +39,9 @@ import { FrontPageComponent } from './front-page/front-page.component';
     NgOptimizedImage,
     MatToolbarModule,
     MatButtonModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    MatDividerModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -10,6 +10,6 @@ export class FrontPageComponent {
   
   constructor() {
     //image location
-    this.ImagePath = '/assets/images/couple.png'
+    this.ImagePath = '/assets/images/mehendi.png'
   }
 }
